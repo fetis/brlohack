@@ -1,0 +1,67 @@
+body {
+    font: 14px Helvetica Neu, Arial;
+    margin: 0;
+    padding: 0 100px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    margin: 50px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1ba17;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 200px 1fr;
+    grid-gap: 20px;
+}
+
+.main aside {
+    grid-area: sidebar;
+}
+
+.main article {
+    grid-area: content;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li.section {
+    margin: 10px 0;
+    border-bottom: 1px solid #d1ba17;
+}
+
+nav a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+footer {
+    margin: 50px 0;
+    border-top: 1px solid #d1ba17;
+    padding: 20px 20px 0;
+}
+
+.recepie  {
+    display: flex;
+    align-items: center;
+}
+.recepie legend {
+    margin-right: 10px;
+}

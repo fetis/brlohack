@@ -1,0 +1,23 @@
+{
+  "name": "predictor3000",
+  "version": "1.0.0",
+  "description": "The best hops predictor ever",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fetis/brlohack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fetis/brlohack/issues"
+  },
+  "homepage": "https://github.com/fetis/brlohack#readme",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

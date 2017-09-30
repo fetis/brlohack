@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HopsPredictor 3000</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="js/canvasjs.min.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+          var chart = new CanvasJS.Chart("chartContainer", {
+            data: [
+              {
+                type: "column",
+                dataPoints: [
+                  { x: 10, y: 10 },
+                  { x: 20, y: 15 },
+                  { x: 30, y: 25 },
+                  { x: 40, y: 30 },
+                  { x: 50, y: 28 }
+                ]
+              }
+            ]
+          });
+
+        chart.render();
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>HopsPredictor 3000</h1>
+        </div>
+    </header>
+
+    <section class="main">
+        <article>
+            <section class="recepie">
+                <legend>Recepie list</legend>
+                <select>
+                    <option value="1">BRLO IPA</option>
+                    <option value="2">BRLO Pale Ale</option>
+                    <option value="3">BRLO Helles</option>
+                    <option value="4">BRLO Porter</option>
+                </select>
+            </section>
+            <section class="popularity">
+                <h2>Popularity trend</h2>
+                <div id="chartContainer" style="height: 500px; width: 50%;"></div>
+
+            </section>
+            <section class="hops">
+                <h2>Hops demand</h2>
+            </section>
+        </article>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="">Analysis</a></li>
+                    <li><a href="">Statistic</a></li>
+                    <li class="section">Configuration</li>
+                    <li><a href="">Recepies</a></li>
+                    <li><a href="">Data Sources</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </section>
+
+    <footer>
+        <a href="https://github.com/fetis/brlohack" target="_blank">HopsPredictor</a> team &copy; 2017.
+        Special for <a href="https://www.brlohack.de" target="_blank">BRLO Hackathon</a>.
+    </footer>
+
+</body>
+</html>
