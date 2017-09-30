@@ -59,9 +59,19 @@ footer {
 }
 
 .recepie  {
+    font-size: 20px;
     display: flex;
     align-items: center;
 }
 .recepie legend {
     margin-right: 10px;
+}
+
+.recepie select {
+    font-size: 20px;
+}
+
+.chart-big {
+    width: 800px;
+    height: 500px;
 }

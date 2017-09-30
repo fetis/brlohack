@@ -7,24 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <script src="js/canvasjs.min.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-          var chart = new CanvasJS.Chart("chartContainer", {
-            data: [
-              {
-                type: "column",
-                dataPoints: [
-                  { x: 10, y: 10 },
-                  { x: 20, y: 15 },
-                  { x: 30, y: 25 },
-                  { x: 40, y: 30 },
-                  { x: 50, y: 28 }
-                ]
-              }
-            ]
-          });
+    <script type="module">
+        import {load} from './js/app.js';
 
-        chart.render();
+        window.addEventListener('load', () => {
+          load();
         });
     </script>
 </head>
@@ -43,16 +30,16 @@
         <article>
             <section class="recepie">
                 <legend>Recepie list</legend>
-                <select>
-                    <option value="1">BRLO IPA</option>
-                    <option value="2">BRLO Pale Ale</option>
-                    <option value="3">BRLO Helles</option>
-                    <option value="4">BRLO Porter</option>
+                <select id="selRecepie">
+                    <option value="ipa">BRLO IPA</option>
+                    <option value="pale-ale">BRLO Pale Ale</option>
+                    <option value="helles">BRLO Helles</option>
+                    <option value="porter">BRLO Porter</option>
                 </select>
             </section>
             <section class="popularity">
                 <h2>Popularity trend</h2>
-                <div id="chartContainer" style="height: 500px; width: 50%;"></div>
+                <div id="trendChart" class="chart-big"></div>
 
             </section>
             <section class="hops">
