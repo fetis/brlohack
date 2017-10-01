@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <script src="js/canvasjs.min.js"></script>
-    <script type="module">
-        import {load} from './js/app.js';
-
-        window.addEventListener('load', () => {
-          load();
-        });
-    </script>
 </head>
 <body>
 
@@ -28,23 +21,11 @@
 
     <section class="main">
         <article>
-            <section class="recepie">
-                <legend>Recepie list</legend>
-                <select id="selRecepie">
-                    <option value="ipa">BRLO IPA</option>
-                    <option value="pale-ale">BRLO Pale Ale</option>
-                    <option value="helles">BRLO Helles</option>
-                    <option value="porter">BRLO Porter</option>
-                </select>
-            </section>
-            <section class="popularity">
-                <h2>Popularity trend</h2>
-                <div id="trendChart" class="chart-big"></div>
-            </section>
-            <section class="hops">
-                <h2>Hops demand by sorts</h2>
-                <div id="hopsChart" class="chart-big"></div>
-            </section>
+            <h2>Statistic</h2>
+            <h3>Google Trends</h3>
+            <p>
+                <img src="images/google-trends.png" alt="" width="800">
+            </p>
         </article>
         <aside>
             <nav>

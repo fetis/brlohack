@@ -50,6 +50,7 @@ nav a {
     display: block;
     padding: 5px 0;
     text-decoration: none;
+    color: blue;
 }
 
 footer {

@@ -21,7 +21,6 @@ export function loadData(filename) {
     loadPredictionData(filename)
   ])
     .then(values => {
-      console.log(values);
       const historical = values[0];
       const predictions = values[1];
 
