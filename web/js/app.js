@@ -3,7 +3,7 @@ import {loadChart} from './load-chart.js';
 export function load() {
   const selector = document.querySelector('#selRecepie');
   selector.addEventListener('change', (event) => {
-    loadChart(event.target.value, trendChart, hopsChart);
+    loadChart(event.target.value, trendChart, hopsChart, hopsTrendChart);
   });
 
   const trendChart = new CanvasJS.Chart("trendChart", {
@@ -17,5 +17,9 @@ export function load() {
     data: []
   });
 
-  loadChart(selector.value, trendChart, hopsChart);
+  const hopsTrendChart = new CanvasJS.Chart("hopsTrendChart", {
+    data: []
+  });
+
+  loadChart(selector.value, trendChart, hopsChart, hopsTrendChart);
 }

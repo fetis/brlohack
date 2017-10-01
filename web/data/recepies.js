@@ -31,7 +31,7 @@ export default {
         name: 'Vanguard',
         amount: 62.5
       }, {
-        name: 'Hallertau Mittelfroh',
+        name: 'Hallertau Mittelfrueh',
         amount: 283.5
       }, {
         name: 'Saphir',
